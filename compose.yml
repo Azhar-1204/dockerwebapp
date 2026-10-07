@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: AzharAzzu/flm-practice1:db
+    image: azharazzu/flm-practice1:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: AzharAzzu/flm-practice1:javaapp
+    image: azharazzu/flm-practice1:javaapp
     ports:
       - "1111:8080"
     deploy:
